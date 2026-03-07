@@ -1,0 +1,22 @@
+/* App-specific styles go here */
+/* Tailwind CSS handles all styling via index.css */
+
+@layer components {
+  .gradient-primary {
+    @apply bg-gradient-to-br from-primary to-primary/80;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
