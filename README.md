@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# AI Study Planner
 
-## Project info
+Study smarter, not harder. A focused exam prep workspace that learns your pace, knows your deadlines, and keeps you on track.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## What's This About?
 
-## How can I edit this code?
+You've got exams coming up. You've got too many subjects. You don't know where to start. 
 
-There are several ways of editing your application.
+This app fixes that. You add your subjects and exam dates, set daily study hours, and it gives you a realistic plan. Log your hours as you study, mark topics that are tough, and watch your progress actually mean something.
 
-**Use Lovable**
+It's built for real exam prep—not vague productivity vibes.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## What You Can Do
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Add Subjects & Topics** – List what you need to study with deadlines and difficulty levels
+- **Smart Suggestions** – Get daily recommendations on what to focus on based on exam proximity and how much you've already covered
+- **Track Study Sessions** – Log hours spent, see where your time actually goes
+- **Daily Goals** – Set a target each day and stay accountable
+- **Study Schedule** – Auto-generates a 30-day plan based on your workload
+- **Progress Dashboard** – Charts that show hours per subject, completion rates, and learnings over time
+- **Difficult Topics Panel** – Highlights topics you've flagged as hard so they don't get ignored
+- **Achievements** – Unlock badges for study streaks, total hours, and completing topics
+- **Pomodoro Timer** – Built-in 25/5 timer to keep focused study sessions short and sweet
+- **Export Your Data** – Download your study plan as JSON, CSV, or PDF
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Requirements:** Node.js & npm
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone this repo
+git clone https://github.com/Yanshu04/ai-study-planner.git
+cd ai-study-planner
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open `http://localhost:8080` and start planning.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Outputs to `/dist`. Done.
 
-## What technologies are used for this project?
+## Tech Stack
 
-This project is built with:
+- **React** – UI
+- **TypeScript** – Catch bugs before they bite
+- **Vite** – blazing fast builds
+- **Tailwind CSS** – styling without the headache
+- **shadcn/ui** – clean, accessible components
+- **Zustand** – state management that doesn't suck
+- **Recharts** – charts that look like you tried
+- **Framer Motion** – smooth animations that matter
+- **Date-fns** – date handling so you don't have to think
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## How Data Works
 
-## How can I deploy this project?
+Everything is saved to your browser's `localStorage`. Log out, come back tomorrow, your subjects and progress are still there. No login required.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Want to backup? Export your data from the dashboard—it's all yours.
 
-## Can I connect a custom domain to my Lovable project?
+## Local Development Notes
 
-Yes, you can!
+- **Hot reload** – Changes auto-refresh while running `npm run dev`
+- **TypeScript** – Strict checking, so watch your types
+- **Styling** – All Tailwind. Customize in `src/index.css`
+- **Store** – Check `src/lib/store.ts` for state shape—it's straightforward
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Folder Structure
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```
+src/
+├── components/       # UI pieces
+├── lib/             # Helpers, store, types
+├── pages/           # Main pages (just Index + 404)
+└── hooks/           # Custom React hooks
+```
+
+## Contributing
+
+Found a bug? Have a feature idea? Open an issue or fork it and send a PR. This is your project too.
+
+## License
+
+MIT—do what you want with it.
